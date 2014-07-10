@@ -2,7 +2,7 @@
 
 ## Kovarianz
 
-```{r data}
+```{r Verteilung der Gewichte}
 weights <- c(119.5, 135.0, 137.1, 137.4, 139.0, 144.1, 144.2, 151.0, 151.3,
              151.8, 152.6, 156.3, 161.9, 162.4, 164.2, 164.7, 166.1, 166.8,
              169.1, 169.8, 170.1, 172.9, 173.3, 174.8, 175.2, 175.8, 176.7,
@@ -21,11 +21,24 @@ cov(y, x)
 
 cor(x, y)
 cor(y, x)
+```
 
+## Kovarianz der Länge und der Häufigkeit
+```{r laenge.vs.haeufigkeit}
+# Add your code!
+```
+
+## Regressionsgerade
+
+```{r Regressionsgeraden}
 plot(x, y, xlab = "height", ylab = "weight", main = "weights and heights")
 
 abline(lm(y ~ x))
+```
 
+
+## Iterkorrelations (Varianz - Kovarianz)
+```{r Iterkorrelationsmatrix}
 z <- rnorm(40, 80, 10)
 z <- sort(z)
 
@@ -43,7 +56,7 @@ cov(x,z)
 cor(x,z)
 ```
 
-
+## Regressionsmodelle
 ```{r hours}
 load('hours.RData')
 hours
@@ -54,5 +67,10 @@ lm(hours$GPA ~ hours$Hours)
 
 results <- lm(hours$GPA ~ hours$Hours)
 summary(results)
+
+
+predicted <- predict(results)
+
+resid <- residuals(results)
 ```
 
