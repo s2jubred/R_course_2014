@@ -1,1 +1,6 @@
 data
+*.html
+Session*/*.md
+.Rhistory
+cache
+figure
