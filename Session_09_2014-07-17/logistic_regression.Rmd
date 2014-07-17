@@ -8,3 +8,9 @@ d <- c(0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 1)
 fit <- glm(d ~ t, family = binomial)
 ```
 
+## Quellen
+
+  - Gries 2008, S. 284-294
+  - Gries 2013, S. 293-316
+  - Pace 2012, S. 201-207
+  - URL: http://tinyurl.com/Ex-09-Sources
